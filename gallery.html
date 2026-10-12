@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Sunset Cinema Club</title>
+  <meta name="description" content="Photos from Sunset Cinema Club screenings across five cities.">
+  <meta name="theme-color" content="#181715">
+  <link rel="icon" type="image/png" href="assets/images/scc-mark.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800;900&amp;family=Space+Grotesk:wght@400;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="wrap bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+    <nav class="wrap" aria-label="Primary">
+      <div class="nav-left">
+        <a href="index.html" class="brand"><img class="brand-logo" src="assets/images/scc-logo.png" alt="Sunset Cinema Club" width="815" height="609"></a>
+        <div class="city-select">
+          <button type="button" class="city-select-btn" aria-expanded="false" aria-haspopup="true" aria-label="Choose city">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> <b>Mumbai</b> <span class="caret"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></span>
+          </button>
+          <ul class="city-menu">
+            <li><button type="button" aria-current="true">Mumbai</button></li>
+            <li><button type="button">Bangalore</button></li>
+            <li><button type="button">Hyderabad</button></li>
+            <li><button type="button">Delhi NCR</button></li>
+            <li><button type="button">Pune</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel" id="primary-nav">
+        <ul class="navlinks">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="venues.html">Venues</a></li>
+          <li><a href="gift-card.html">Gift Card</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="has-submenu">
+            <button type="button" class="submenu-toggle" aria-expanded="false" aria-haspopup="true">More</button>
+            <ul class="submenu">
+              <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+              <li><a href="index.html#private">Private Screening</a></li>
+              <li><a href="#about">About Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="navright">
+          <a href="join-the-club.html" class="btn btn-outline">Join the Club</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="promo-strip">
+    <div class="wrap">
+      <span><b>Members watch free.</b> Get a season pass to every Sunset Cinema Club screening.</span>
+      <a href="join-the-club.html">View Details <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Gallery</span></nav>
+        <h1>Gallery</h1>
+        <p>Rooftops at golden hour, candlelit lawns, drive-ins under a full moon — a look back at nights we've spent at the movies across five cities.</p>
+      </div>
+    </section>
+
+    <section id="gallery" class="glow-host">
+      <div class="wrap">
+        <div class="listing">
+          <p class="filter-label" id="cityFilterLabel">Filter by city</p>
+          <div class="pill-row" role="group" aria-labelledby="cityFilterLabel" data-filter-group>
+            <button type="button" class="filter-pill active" data-filter="all">All Cities</button>
+            <button type="button" class="filter-pill" data-filter="delhi-ncr">Delhi NCR</button>
+            <button type="button" class="filter-pill" data-filter="mumbai">Mumbai</button>
+            <button type="button" class="filter-pill" data-filter="bengaluru">Bengaluru</button>
+            <button type="button" class="filter-pill" data-filter="hyderabad">Hyderabad</button>
+            <button type="button" class="filter-pill" data-filter="pune">Pune</button>
+          </div>
+
+          <ul class="gallery-grid" id="galleryGrid" data-listing data-page="9">
+          <li class="gallery-item" data-type="hyderabad">
+            <button type="button" class="gallery-card" data-album="0" aria-label="Open photos from One Golf Hyderabad">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-1.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>One Golf Hyderabad</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="mumbai">
+            <button type="button" class="gallery-card" data-album="1" aria-label="Open photos from Infiniti Malad">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-2.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Infiniti Malad</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="pune">
+            <button type="button" class="gallery-card" data-album="2" aria-label="Open photos from SCC Republic Pune">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-3.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>SCC Republic Pune</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="mumbai">
+            <button type="button" class="gallery-card" data-album="3" aria-label="Open photos from Equinox">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-1.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Equinox</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="bengaluru">
+            <button type="button" class="gallery-card" data-album="4" aria-label="Open photos from Nexus Koramangala">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-2.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Nexus Koramangala</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="bengaluru">
+            <button type="button" class="gallery-card" data-album="5" aria-label="Open photos from Ecoworld Bengaluru">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-3.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Ecoworld Bengaluru</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="mumbai">
+            <button type="button" class="gallery-card" data-album="6" aria-label="Open photos from Taj Lands End">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-1.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Taj Lands End</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="delhi-ncr">
+            <button type="button" class="gallery-card" data-album="7" aria-label="Open photos from Aerocity">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-2.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Aerocity</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="hyderabad">
+            <button type="button" class="gallery-card" data-album="8" aria-label="Open photos from Jubilee Hills">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-3.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Jubilee Hills</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="delhi-ncr" hidden>
+            <button type="button" class="gallery-card" data-album="9" aria-label="Open photos from Mehrauli Lawns">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-1.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Mehrauli Lawns</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="pune" hidden>
+            <button type="button" class="gallery-card" data-album="10" aria-label="Open photos from Koregaon Park">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-2.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>Koregaon Park</b></span>
+            </button>
+          </li>
+          <li class="gallery-item" data-type="mumbai" hidden>
+            <button type="button" class="gallery-card" data-album="11" aria-label="Open photos from The Nines">
+              <span class="gallery-card-image"><img src="assets/images/photos/screening-3.jpg" alt="" loading="lazy"></span>
+              <span class="gallery-card-body"><b>The Nines</b></span>
+            </button>
+          </li>
+          </ul>
+
+          <div class="empty-state" data-empty hidden>
+            <h3>No photos from this city yet</h3>
+            We're screening here soon — check back after the next event.
+          </div>
+
+          <div class="load-more-wrap" data-more>
+            <span class="count">Showing <span data-shown>9</span> of <span data-total>12</span></span>
+            <button type="button" class="btn btn-outline">Load More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <div class="lightbox-stage">
+        <button type="button" class="modal-close lightbox-close" aria-label="Close"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+        <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photo"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <img class="lightbox-image" id="lightboxImage" src="assets/images/photos/screening-1.jpg" alt="">
+        <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photo"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+      <ul class="lightbox-thumbs" id="lightboxThumbs"></ul>
+    </dialog>
+
+    <section class="member-cta">
+      <div class="wrap">
+        <div class="banner banner--member">
+          <div class="banner-left">
+            <p class="banner-eyebrow">Not a member yet?</p>
+            <h2 class="display">New screenings, new cities,<br>first dibs on tickets — straight to your inbox.</h2>
+          </div>
+          <a href="join-the-club.html" class="btn btn-primary btn-wide">Join the Club</a>
+          <div class="bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-rule"></div>
+    <div class="bulbs foot-bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img class="brand-logo" src="assets/images/scc-logo.png" alt="Sunset Cinema Club" width="815" height="609"></div>
+          <p class="foot-tag">India's only immersive outdoor cinema experience — five cities, one big screen under the sky.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#private">Private Screening</a></li>
+            <li><a href="gift-card.html">Gift Card</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Cities</h4>
+          <ul>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Hyderabad</a></li>
+            <li><a href="#">Delhi NCR</a></li>
+            <li><a href="#">Pune</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="mailto:hello@sunsetcinemaclub.in">hello@sunsetcinemaclub.in</a></li>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">Copyright sunsetcinemaclub.in 2026</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

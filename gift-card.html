@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gift Cards — Sunset Cinema Club</title>
+  <meta name="description" content="Gift a night under the stars — a Sunset Cinema Club gift card for any screening in five cities.">
+  <meta name="theme-color" content="#181715">
+  <link rel="icon" type="image/png" href="assets/images/scc-mark.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800;900&amp;family=Space+Grotesk:wght@400;600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <div class="wrap bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+    <nav class="wrap" aria-label="Primary">
+      <div class="nav-left">
+        <a href="index.html" class="brand"><img class="brand-logo" src="assets/images/scc-logo.png" alt="Sunset Cinema Club" width="815" height="609"></a>
+        <div class="city-select">
+          <button type="button" class="city-select-btn" aria-expanded="false" aria-haspopup="true" aria-label="Choose city">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> <b>Mumbai</b> <span class="caret"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></span>
+          </button>
+          <ul class="city-menu">
+            <li><button type="button" aria-current="true">Mumbai</button></li>
+            <li><button type="button">Bangalore</button></li>
+            <li><button type="button">Hyderabad</button></li>
+            <li><button type="button">Delhi NCR</button></li>
+            <li><button type="button">Pune</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel" id="primary-nav">
+        <ul class="navlinks">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="venues.html">Venues</a></li>
+          <li><a href="gift-card.html" aria-current="page">Gift Card</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="has-submenu">
+            <button type="button" class="submenu-toggle" aria-expanded="false" aria-haspopup="true">More</button>
+            <ul class="submenu">
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="index.html#private">Private Screening</a></li>
+              <li><a href="#about">About Us</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="navright">
+          <a href="join-the-club.html" class="btn btn-outline">Join the Club</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="promo-strip">
+    <div class="wrap">
+      <span><b>Members watch free.</b> Get a season pass to every Sunset Cinema Club screening.</span>
+      <a href="join-the-club.html">View Details <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Gift Card</span></nav>
+        <h1>Gift a night under the stars</h1>
+        <p>A Sunset Cinema Club gift card works at any screening in any of our five cities. Pick an amount, add a note, and we'll deliver it by email on the day you choose.</p>
+      </div>
+    </section>
+
+    <section id="gift-card">
+      <div class="wrap">
+        <div class="checkout">
+          <div class="checkout-main">
+            <ol class="stepper" id="giftStepper">
+              <li aria-current="step">Gifting Details</li>
+              <li>Booking Details</li>
+            </ol>
+
+            <form id="giftStep1" novalidate>
+              <div class="form-block">
+                <h2 class="form-h">Select amount</h2>
+                <div class="amount-grid" role="radiogroup" aria-label="Gift card amount">
+                  <label class="amount-pill"><input type="radio" name="amount" value="1500"><span>1,500</span></label>
+                  <label class="amount-pill"><input type="radio" name="amount" value="2500"><span>2,500</span></label>
+                  <label class="amount-pill"><input type="radio" name="amount" value="3000" checked><span>3,000</span></label>
+                  <label class="amount-pill"><input type="radio" name="amount" value="5000"><span>5,000</span></label>
+                </div>
+              </div>
+
+              <div class="form-block">
+                <h2 class="form-h">Recipient Details</h2>
+                <div class="field-row">
+                  <div class="field"><label for="gcName">Full Name</label><input class="input" type="text" id="gcName" required autocomplete="off" placeholder="eg. Amit Saxena"></div>
+                  <div></div>
+                  <div class="field"><label for="gcEmail">Email</label><input class="input" type="email" id="gcEmail" required autocomplete="off" placeholder="eg. amit@domain.com"></div>
+                  <div class="field"><label for="gcPhone">Contact Number</label><input class="input" type="tel" id="gcPhone" inputmode="tel" pattern="[0-9+\s\-]{10,15}" autocomplete="off" placeholder="+91 - enter 10 digit mobile number"></div>
+                </div>
+                <div class="field" style="margin-top:16px">
+                  <label for="gcMsg">Personal Message</label>
+                  <textarea class="input" id="gcMsg" rows="2" maxlength="200" placeholder="Enter a personal gifting message"></textarea>
+                </div>
+              </div>
+
+              <div class="form-block">
+                <h2 class="form-h form-h--caps">Have a gift card or voucher?</h2>
+                <div class="voucher-row">
+                  <input class="input" type="text" id="gcVoucher" aria-label="Gift card or voucher code" placeholder="Enter gift/voucher code" autocomplete="off">
+                  <button type="button" class="text-btn" id="gcApply">Apply</button>
+                </div>
+                <p class="voucher-msg" id="gcVoucherMsg" role="status"></p>
+              </div>
+
+              <p class="form-error" id="gcError1" role="alert" hidden></p>
+              <div class="form-actions"><button class="btn btn-primary" type="submit">Proceed</button></div>
+            </form>
+
+            <form id="giftStep2" novalidate hidden>
+              <div class="form-block">
+                <h2 class="form-h">Your Details</h2>
+                <div class="field-row">
+                  <div class="field"><label for="gcFromFirst">First Name</label><input class="input" type="text" id="gcFromFirst" required autocomplete="given-name" placeholder="eg. Amit"></div>
+                  <div class="field"><label for="gcFromLast">Last Name</label><input class="input" type="text" id="gcFromLast" required autocomplete="family-name" placeholder="eg. Saxena"></div>
+                  <div class="field"><label for="gcFromEmail">Email</label><input class="input" type="email" id="gcFromEmail" required autocomplete="email" placeholder="eg. amit@domain.com"></div>
+                  <div class="field"><label for="gcFromPhone">Contact Number</label><input class="input" type="tel" id="gcFromPhone" required autocomplete="tel" inputmode="tel" pattern="[0-9+\s\-]{10,15}" placeholder="+91 - enter 10 digit mobile number"></div>
+                </div>
+              </div>
+              <div class="form-block">
+                <h2 class="form-h">Order Summary</h2>
+                <dl class="review-list">
+                  <div><dt>Gift card for</dt><dd id="gcReviewTo">&mdash;</dd></div>
+                  <div><dt>Gift card value</dt><dd id="gcReviewAmount">&mdash;</dd></div>
+                  <div><dt>Discount</dt><dd id="gcReviewDiscount">&#8377;0</dd></div>
+                  <div class="total"><dt>Order total</dt><dd id="gcReviewTotal">&mdash;</dd></div>
+                </dl>
+              </div>
+              <p class="form-error" id="gcError2" role="alert" hidden></p>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit" id="gcPay">Proceed to Pay</button>
+                <button class="text-btn" type="button" data-back>Back</button>
+              </div>
+            </form>
+
+            <div class="success-panel" id="giftSuccess" tabindex="-1" hidden>
+              <span class="icon-badge" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+              <h2 class="display">Gift Card On Its Way</h2>
+              <p id="gcSuccessText">We'll email it to your recipient shortly.</p>
+              <a href="gift-card.html" class="btn btn-outline">Send Another</a>
+            </div>
+          </div>
+
+          <aside class="checkout-aside">
+            <div class="gift-card" aria-hidden="true">
+              <div class="card-top">
+                <img src="assets/images/scc-logo.png" alt="" width="815" height="609">
+                <span class="tag">Gift Card</span>
+              </div>
+              <div class="card-amount" id="gcPreviewAmount">&#8377; 3,000.00</div>
+              <div class="card-dates">
+                <div><span>Valid from</span><b id="gcValidFrom">&mdash;</b></div>
+                <div><span>Valid till</span><b id="gcValidTill">&mdash;</b></div>
+              </div>
+            </div>
+            <div class="benefits">
+              <h3>Gift card benefits</h3>
+              <ul class="check-list">
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16.5 9.5"/></svg> Redeemable against any purchase on the website.</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16.5 9.5"/></svg> Valid for 1 year and applicable pan-India.</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16.5 9.5"/></svg> Transferable in case the recipient is unable to use it.</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16.5 9.5"/></svg> Can be created for an amount of your choice.</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16.5 9.5"/></svg> A great way to surprise your loved ones — add a personal message too!</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="member-cta">
+      <div class="wrap">
+        <div class="banner banner--member">
+          <div class="banner-left">
+            <p class="banner-eyebrow">Not a member yet?</p>
+            <h2 class="display">New screenings, new cities,<br>first dibs on tickets — straight to your inbox.</h2>
+          </div>
+          <a href="join-the-club.html" class="btn btn-primary btn-wide">Join the Club</a>
+          <div class="bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-rule"></div>
+    <div class="bulbs foot-bulbs" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="foot-brand"><img class="brand-logo" src="assets/images/scc-logo.png" alt="Sunset Cinema Club" width="815" height="609"></div>
+          <p class="foot-tag">India's only immersive outdoor cinema experience — five cities, one big screen under the sky.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#private">Private Screening</a></li>
+            <li><a href="gift-card.html">Gift Card</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Cities</h4>
+          <ul>
+            <li><a href="#">Mumbai</a></li>
+            <li><a href="#">Bangalore</a></li>
+            <li><a href="#">Hyderabad</a></li>
+            <li><a href="#">Delhi NCR</a></li>
+            <li><a href="#">Pune</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li><a href="mailto:hello@sunsetcinemaclub.in">hello@sunsetcinemaclub.in</a></li>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">Copyright sunsetcinemaclub.in 2026</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
